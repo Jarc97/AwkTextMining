@@ -8,7 +8,7 @@
 # req ~ EI(F|G)...O? | LIX...
 #
 # To run
-# awk -f compose.awk input/study_plan.txt > compose_output/composed_plan.txt
+#  awk -f compose.awk ../study_plan_input/study_plan.txt > ../compose_output/composed_plan.txt
 
 # Authors
 #	Jose Javier Arce Zeledon
