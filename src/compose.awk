@@ -16,7 +16,7 @@
 #	Kevin Venegas Loria
 #	Aaron Villalobos Arguedas
 
-@include "study_plan_lib"
+@include "textmininglib"
 BEGIN { 
 	OFS="::"
 }
