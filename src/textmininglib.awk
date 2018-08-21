@@ -18,3 +18,30 @@ function assignLevelAndTerm(){
 	if($1~/OPTATIVOS/)
 		level=term="_"
 }
+
+# Functions related to new line case
+#	caseNewLine()
+#	newLineCriteria(validCode,firstCount)
+#	newLine()
+
+function caseNewLine(){
+	if(newLineCriteria(isValidCode(),isSubjectCode()))
+		newLine()
+}
+function newLineCriteria(validCode,firstCount){
+	return validCode&&firstCount
+}
+function newLine(){
+	code_count+=1
+	line_count+=1
+	lineOpened=1
+}
+function isValidCode(){
+	isRegularCode=$0~/^[A-Z]{3}\s?-?([X]{3}|[0-9]{3}\s?O?)$/
+	isEgCode=$0~/^Estudios Generales/
+	isOptCode=$0~/^Optativa/
+	return isRegularCode||isEgCode||isOptCode
+}
+function isSubjectCode(){
+	return code_count==0
+}
