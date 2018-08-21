@@ -45,3 +45,21 @@ function isValidCode(){
 function isSubjectCode(){
 	return code_count==0
 }
+
+# Functions related to line field case
+#	caseLineField()
+#	lineFieldCriteria()
+#	collectLineField()
+
+function caseLineField(){
+	if(lineFieldCriteria())
+		collectLineField()
+}
+function lineFieldCriteria(){
+	return lineOpened==1 && !lineDoneCriteria()
+}
+function collectLineField(){
+	subject_info[subject_info_count]=$0
+	subject_info_count+=1
+}
+
