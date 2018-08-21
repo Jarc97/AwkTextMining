@@ -63,3 +63,56 @@ function collectLineField(){
 	subject_info_count+=1
 }
 
+
+# Functions related to line done case
+#	caseLineDone()
+#	lineDoneCriteria()
+#	lineDone()
+
+function caseLineDone(){
+	if(lineDoneCriteria())
+		lineDone()
+}
+function lineDoneCriteria(){
+	return $0==""&&line_count>0&&code_count>0
+}
+
+function lineDone(){
+	buildLine()
+	code_count=subject_info_count=lineOpened=0
+	appendAndClear()
+	line=line OFS academicDegree(credSum) OFS level OFS term
+	print line
+}
+
+function appendAndClear(){
+	for(lf in subject_info){
+		line=line OFS subject_info[lf]
+		delete subject_info[lf]
+	}
+}
+
+function buildLine(){
+	if(missingData()){
+		completeSubjectData()
+		credSum=credSum+subject_info[1]
+	}else{
+		line=line_count
+		credSum=credSum+subject_info[2]
+	}
+}
+
+function academicDegree(credSum){
+	return credSum<=88? "dipl": "bsc"
+}
+
+function missingData(){
+	return length(subject_info)<4
+}
+function completeSubjectData(){
+	s=subject_info[0]
+	gsub (" ", "",s)
+	line=line_count OFS s
+}
+
+
