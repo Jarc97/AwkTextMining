@@ -10,9 +10,22 @@
 # To run
 # awk -f compose.awk input/study_plan.txt > compose_output/composed_plan.txt
 
+# Authors
+#	Jose Javier Arce Zeledon
+#	Julio Rodriguez Chavarria
+#	Kevin Venegas Loria
+#	Aaron Villalobos Arguedas
 
+@include "study_plan_lib"
 BEGIN { 
-	
+	OFS="::"
+}
+{
+	handleCarriageReturn()
+	sharedLineFields()
+	caseNewLine()
+	caseLineField()
+	caseLineDone()
 }
 
 
