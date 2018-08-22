@@ -32,6 +32,8 @@ function newLineCriteria(validCode,firstCount){
 	return validCode&&firstCount
 }
 function newLine(){
+	if($0~/^Optativa/)
+		optCount+=1
 	code_count+=1
 	line_count+=1
 	lineOpened=1
@@ -87,9 +89,15 @@ function lineDone(){
 
 function appendAndClear(){
 	for(lf in subject_info){
+		setAdmissionRequirements()
 		line=line OFS subject_info[lf]
 		delete subject_info[lf]
 	}
+}
+
+function setAdmissionRequirements(){
+	if(subject_info[lf]=="Ingreso a Carrera"||subject_info[lf]=="Ver cursos generales"||subject_info[lf]=="Ver cursos optativos")
+		subject_info[lf]="Admission"
 }
 
 function buildLine(){
@@ -111,8 +119,27 @@ function missingData(){
 }
 function completeSubjectData(){
 	s=subject_info[0]
+	fixOptionalCode(s)
 	gsub (" ", "",s)
 	line=line_count OFS s
+}
+function fixOptionalCode(o_code){
+if(o_code=="Optativa "){
+		switch(optCount){
+			case 1:
+				s=s"I"
+				break;
+			case 2:
+				s=s"II"
+				break;
+			case 3:
+				s=s"III"
+				break;
+			case 4:
+				s=s"IV"
+				break;
+		}
+	}
 }
 
 

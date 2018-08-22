@@ -1,12 +1,12 @@
-1::EIF200::Fundamentos de Informática::3::Ingreso a Carrera::dipl::I::I
-2::MAY230::Matemática para Informática I::4::Ingreso a Carrera::dipl::I::I
-3::EstudiosGeneralesI::Estudios Generales I::3::Ver cursos generales::dipl::I::I
-4::EstudiosGeneralesII::Estudios Generales II::3::Ver cursos generales::dipl::I::I
-5::LIX-410::Inglés Integrado I::4::Ingreso a Carrera::dipl::I::I
+1::EIF200::Fundamentos de Informática::3::Admission::dipl::I::I
+2::MAY230::Matemática para Informática I::4::Admission::dipl::I::I
+3::EstudiosGeneralesI::Estudios Generales I::3::Admission::dipl::I::I
+4::EstudiosGeneralesII::Estudios Generales II::3::Admission::dipl::I::I
+5::LIX-410::Inglés Integrado I::4::Admission::dipl::I::I
 6::EIF201::Programación I::4::EIF200::MAY230::dipl::I::II
 7::MAY231::Matemática para Informática II::4::MAY230::dipl::I::II
-8::EstudiosGeneralesIII::Estudios Generales III::3::Ver cursos generales::dipl::I::II
-9::EstudiosGeneralesIV::Estudios Generales IV::3::Ver cursos generales::dipl::I::II
+8::EstudiosGeneralesIII::Estudios Generales III::3::Admission::dipl::I::II
+9::EstudiosGeneralesIV::Estudios Generales IV::3::Admission::dipl::I::II
 10::LIX-411::Inglés Integrado II::4::LIX-410::dipl::I::II
 11::EIF204::Programación II::4::EIF201::dipl::II::I
 12::MAY232::Matemática para Informática III::4::MAY231::dipl::II::I
@@ -30,13 +30,13 @@
 30::EIF407::Liderazgo y Organización ::3::EIF404::bsc::III::II
 31::EIF XXX::Diseño y programación de plataformas Móviles::4::EIF209::EIF428 O::bsc::IV::I
 32::EIF406::Ingeniería de Sistemas III::4::EIF401::bsc::IV::I
-33::Optativa::Optativa ::3::Ver cursos optativos::bsc::IV::I
-34::Optativa::Optativa ::3::Ver cursos optativos::bsc::IV::I
+33::OptativaI::Optativa ::3::Admission::bsc::IV::I
+34::OptativaII::Optativa ::3::Admission::bsc::IV::I
 35::EIF403::Métodos de Investigación Científica en Informática::3::MAY223::bsc::IV::I
 36::EIF408::Proyectos y su Aplicación en la Organización (PPS)::5::EIF209::EIF401::EIF402::bsc::IV::II
 37::EIF409::Aplicaciones Informáticas Globales::4::EIF209::EIF401::EIF402::bsc::IV::II
-38::Optativa::Optativa ::3::Ver cursos optativos::bsc::IV::II
-39::Optativa::Optativa ::3::Ver cursos optativos::bsc::IV::II
+38::OptativaIII::Optativa ::3::Admission::bsc::IV::II
+39::OptativaIV::Optativa ::3::Admission::bsc::IV::II
 40::EIF410::Informática y Sociedad::2::EIF401::bsc::IV::II
 41::EIF100O::EIF100O::Dispositivos para comunicaciones de Datos::EIF 208 Comunicaciones y Redes de Computadores ::bsc::_::_
 42::EIF420O::EIF420O::Inteligencia Artificial::EIF 207 Estructuras de Datos::bsc::_::_
