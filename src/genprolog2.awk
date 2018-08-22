@@ -34,11 +34,11 @@ BEGIN {
 
 #Body
 {
-	#Esta vara siempre se imprime
+	
 	printf "%%---  '%s' --- \n", $2;
 	printf "course('%s'). \n", $2;
 	
-	#Esta vara se imprime si es una general u optativa
+
 	if($3 ~ /Optativa|Generales/){
 	
 		primer_numero = numeros[$7];
@@ -49,7 +49,7 @@ BEGIN {
 		printf "course_req('%s', '%s'). \n", $2, $5;
 	} 
 	else{
-	#Esta vara se imprime si es una regular dependiendo de cuantos requisitos tenga
+
 		if($6 ~ /dipl|bsc/){
 		
 			primer_numero = numeros[$7];
