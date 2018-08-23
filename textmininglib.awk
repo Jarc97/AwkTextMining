@@ -68,8 +68,8 @@ function collectLineField(){
 		subject_info[2]="3"
 		subject_info_count+=1
 	}
-	subject_info[subject_info_count]=$0
-	subject_info_count+=1
+		subject_info[subject_info_count]=$0
+		subject_info_count+=1
 	
 }
 
