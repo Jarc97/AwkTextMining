@@ -25,20 +25,8 @@ diferencia(X1, X2, LC, LR, LN):-
 							lista_req(X2, LR),
 							diff_listas(LR, ['Admission'], LR2),
 							diff_listas(LR2, LC, LN).
-							%diffSet(['Admission'],LR, LR2),
-							%diffSet(LC, LR2, LN).
 
-%%Metodo que hace la diferencia de listas encontrado en internet
-diffSet([], X, X).
-diffSet([H|T1],Set,Z):-
-				member(H, Set),       % NOTE: arguments swapped!
-				!, delete(T1, H, T2), % avoid duplicates in first list
-				delete(Set, H, Set2), % remove duplicates in second list
-				diffSet(T2, Set2, Z).
-diffSet([H|T], Set, [H|Set2]) :-
-				diffSet(T,Set,Set2).
- 
- %%Metodo que hace la diferencia de listas hecho por Aaron
+ %%Metodo que hace la diferencia de listas
 diff_listas(X, [], X).
 diff_listas(X, [H|T], RS):-
 							member(H, X),
