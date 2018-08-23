@@ -1,8 +1,8 @@
 /*
-Authores
-	José Javier Arce Zeledón
-	Julio Rodríguez Chavarría
-	Kevin Venegas Loría
+Authors
+	Jose Javier Arce Zeledon
+	Julio Rodriguez Chavarria
+	Kevin Venegas Loria
 	Aaron Villalobos Arguedas
 */
 
