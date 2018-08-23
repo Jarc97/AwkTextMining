@@ -1,5 +1,5 @@
 /*
-Autores
+Authores
 	José Javier Arce Zeledón
 	Julio Rodríguez Chavarría
 	Kevin Venegas Loría

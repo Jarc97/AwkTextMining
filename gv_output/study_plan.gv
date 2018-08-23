@@ -1,0 +1,63 @@
+digraph Plan {
+    node [shape="box", nodesep=2];
+    Admission [shape="invtriangle", color="green", style="filled"];
+    ranksep = 1;
+    { rank=same; Admission }
+
+    Admission -> EIF200;
+    { rank=same; EIF200 };
+    EIF200 -> EIF201;
+    { rank=same; EIF201 };
+    EIF201 -> EIF204;
+    EIF200 -> EIF202;
+    EIF200 -> EIF203;
+    { rank=same; EIF204,EIF202,EIF203 };
+    EIF204 -> EIF206;
+    EIF203 -> EIF207;
+    EIF204 -> EIF207;
+    EIF201 -> EIF205;
+    EIF202 -> EIF205;
+    EIF201 -> EIF404;
+    { rank=same; EIF206,EIF207,EIF207,EIF205,EIF205,EIF404 };
+    EIF206 -> EIF209;
+    EIF206 -> EIF210;
+    EIF206 -> EIF211;
+    EIF207 -> EIF211;
+    EIF204 -> EIF212;
+    EIF205 -> EIF212;
+    EIF205 -> EIF208;
+    { rank=same; EIF209,EIF210,EIF211,EIF211,EIF212,EIF212,EIF208 };
+    EIF206 -> EIF400;
+    EIF210 -> EIF401;
+    EIF212 -> EIF402;
+    EIF211 -> EIF402;
+    EIF404 -> EIF407;
+    { rank=same; EIF400,EIF401,EIF402,EIF402,EIF407 };
+    EIF401 -> EIF406;
+    { rank=same; EIF406 };
+    EIF209 -> EIF408;
+    EIF401 -> EIF408;
+    EIF402 -> EIF408;
+    EIF209 -> EIF409;
+    EIF401 -> EIF409;
+    EIF402 -> EIF409;
+    EIF401 -> EIF410;
+    { rank=same; EIF408,EIF408,EIF408,EIF409,EIF409,EIF409,EIF410 };
+    EIF208 -> EIF100O;
+    EIF207 -> EIF420O;
+    EIF206 -> EIF422O;
+    EIF204 -> EIF424O;
+    EIF206 -> EIF424O;
+    EIF204 -> EIF427O;
+    EIF206 -> EIF428O;
+    EIF211 -> EIF428O;
+    EIF212 -> EIF431O;
+    EIF402 -> EIF431O;
+    EIF212 -> EIF433O;
+    EIF211 -> EIF433O;
+    EIF402 -> EIF434O;
+    EIF434O -> EIF435O;
+    EIF425O -> EIG416O;
+    START -> I_I -> I_II -> II_I -> II_II -> III_I -> III_II -> IV_I -> IV_II -> END [color="blue", style="filled"];
+}
+

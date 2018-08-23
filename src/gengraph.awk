@@ -1,8 +1,15 @@
+# Authors
+#	Jose Javier Arce Zeledon
+#	Julio Rodriguez Chavarria
+#	Kevin Venegas Loria
+#	Aaron Villalobos Arguedas
+
 # Generates graphviz file from the compose.awk output
 # loriacarlos@gmail.com
 # compose_output/composed_plan.txt --> gv_output/study_plan.gv
 # To run
 # awk -f gengraph.awk compose_output/composed_plan.txt > gv_output/study_plan.gv
+
 
 BEGIN {
     FS="::";

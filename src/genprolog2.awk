@@ -1,3 +1,9 @@
+# Authors
+#	Jose Javier Arce Zeledon
+#	Julio Rodriguez Chavarria
+#	Kevin Venegas Loria
+#	Aaron Villalobos Arguedas
+
 # Generates prolog file from compose.awk output
 # loriacarlos@gmail.com
 # compose_output/composed_plan.txt --> prolog_output/study_plan.pl
