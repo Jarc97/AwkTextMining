@@ -3,6 +3,7 @@
 #	Julio Rodriguez Chavarria
 #	Kevin Venegas Loria
 #	Aaron Villalobos Arguedas
+
 # Composes records from the (slightly edited) study plan text version
 # loriacarlos@gmail.com
 # input/study_plan.txt --> compose_output/composed_plan.txt

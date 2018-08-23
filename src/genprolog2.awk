@@ -9,8 +9,8 @@
 # compose_output/composed_plan.txt --> prolog_output/study_plan.pl
 # To run
 # awk -f src/prolog.awk output/composed_plan.txt > prolog_output/study_plan.pl
-
 #Head
+
 BEGIN {
 	
 	

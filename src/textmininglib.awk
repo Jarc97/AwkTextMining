@@ -134,7 +134,7 @@ function checkCodeForm(){
 
 function setAdmissionRequirements(){
 	if(subject_info[lf]=="Ingreso a Carrera"||subject_info[lf]=="Ver cursos generales"||subject_info[lf]=="Ver cursos optativos"||subject_info[lf]=="")
-		subject_info[lf]="Admission"
+		subject_info[lf]="3"OFS"Admission"
 }
 
 function academicDegree(credSum){
